@@ -1,0 +1,55 @@
+/* reset de css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+}
+.opcion-seleccionada {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav p {
+    margin-left: 5px;
+}
+
+#menu  {
+    margin-left: 25px;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+nav {
+    width: 300px;
+}
+
+section {
+      flex: 1;
+      padding: 2rem;
+ }
+
+ footer {
+    margin-top: 30px;
+ }
+
