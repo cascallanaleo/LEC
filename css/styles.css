@@ -1,25 +1,20 @@
 /* reset de css */
 * {
     font-family: "Roboto", sans-serif;
-    /* margin: 0; */
-    /* padding: 0; */
-    /* box-sizing: border-box; */
 }
 
 /* Header stilos */
 header {
-    /* position: fixed; */
-      position: fixed;
-      width: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
+
 .encabezado {
     display: flex;
     justify-content: space-between;
     background-image: url(../images/header.jpg);
-    /* height: 25vh; */
-    background-size:100% 100%;
-    /* background-size:contain; */
-    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
     position: relative;
     height: 7.3rem;
 }
@@ -39,28 +34,19 @@ header {
 #menu {
     display: flex;
     position: relative;
-    /* border: 2px solid rgba(255, 255, 255, 0.8);  */
-    /* background-color: #000000ff; */
-    align-items:end;
+    align-items: end;
     justify-content: right;
-    /* text-align:end; */
-    /* padding: 10px; */
     column-gap: 1.5rem;
     font-size: 1.5rem;
     list-style: none;
-    /* justify-content: flex-end; */
-    white-space:nowrap;
-    /* margin-top: 65px; */
-    /* margin-bottom: 0px; */
+    white-space: nowrap;
     width: 100%;
     height: 7rem;
-    /* border: 3px solid white; */
-    /* list-style-type: none; */
 }
 
 #menu a {
     color: #FFF;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .opcion-seleccionada {
@@ -71,8 +57,6 @@ header {
 }
 
 /* body estilos */
-body {
-}
 
 /* main estilos */
 main {
@@ -80,8 +64,9 @@ main {
     padding-bottom: 5rem;
     width: 100%;
     background-color: #ccc;
-    /* display: flex; */
 }
+
+    /*cards  */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -90,47 +75,95 @@ main {
     justify-content: center;
 }
 .card-lec {
-  width: 25rem;
-  border: 4px solid rgba(0, 0, 0, 0.238);
+    width: 25rem;
+    border: 4px solid rgba(0, 0, 0, 0.238);
 }
 .card-imagen {
     width: 100%;
     height: 25rem;
 }
-
 .card-name {
-    width:  100%;
+    width: 100%;
     text-align: center;
     background-color: #f2cbcb;
-    padding: 0.5rem;;
+    padding: 0.5rem;
+    ;
 }
-
-.card-btn{
-    /* border: none; */
+.card-btn {
     background-color: #000;
     color: #fff;
     padding: 0.5rem;
     width: 100%;
 }
 
-
- .foto-carousel {
-  height: 30rem;
-  object-fit:contain;
+    /*Grid Carousel*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 90%;
+    margin-left: 5%;
+}
+.foto-carousel {
+    height: 25rem;
+    object-fit: contain;
+}
+.div1 {
+    grid-area: 1 / 1 / 2/ 2;
+    border: 2px solid black;
+    background-color: #fff;
+}
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 2px solid black;
+    background-color: #fff;
 }
 
-/* fotter estilos */
+    /*grid quienes somos  */
+.quienes-somos {
+    width: 70%;
+    margin-left: 15%;
+}
+.foto-quienes-somos {
+    height: 25rem;
+}
+.parent-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5%;
+}
+.div1-quienes-somos {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.div2-quienes-somos {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.div3-quienes-somos {
+    grid-area: 2 / 1 / 2 / 3;
+}
 
- footer{
+#mensaje {
+    border: 2px solid black;
+    padding: 1rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/* fotter estilos */
+footer {
     background-color: #000;
     margin-top: 2rem;
     height: 10rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-footer img{
+
+footer img {
     width: 3rem;
     height: 3rem;
     object-fit: cover;
