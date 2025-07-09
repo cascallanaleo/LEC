@@ -17,48 +17,48 @@
 </head>
 
 <body>
-  <header>
-    <div class="encabezado">
-      <div class="oscurecer-fondo">
-        <div class="logo">
+  <header class="encabezado">
+    <div class="oscurecer-fondo">
+      <section class="d-flex">
+        <div>
           <img class="logo-tipo" src="./images/logo.jpg" alt="logo">
-          <!-- <h1 class="logo-nombre">LEC Equipamientos Comerciales</h1> -->
         </div>
-      </div>
-      <nav class="navbar navbar-expand-xl w-100">
-        <div class="container-fluid">
-          <button class="navbar-toggler ms-auto  bg-light" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="menu" class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active opcion-seleccionada" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/quienes-somos.html">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg w-100 header-nav">
+          <div class="container-fluid header-container">
+
+            <button class="navbar-toggler ms-auto bg-light mb-2 me-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul id="header-menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link active opcion-seleccionada" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/quienes-somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </section>
     </div>
   </header>
 
   <main>
     <h2 class="text-center"> Bienvenidos a LEC Equipamientos Comerciales</h2>
-    <h3 class="text-center"> NUESTRAS OFERTAS </h3>
+    <h3 class="text-center mt-4 text-danger-emphasis"> NUESTRAS OFERTAS </h3>
     <!-- Oferta 1 -->
     <section>
       <div class="parent px-5">
@@ -66,13 +66,14 @@
           <div id="carouselOferta1" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./images/oferta-pa1.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pa1.png" class="d-block w-100 foto-carousel" alt="cortadora-fiambre" />
               </div>
               <div class="carousel-item">
-                <img src="./images/oferta-pa2.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pa2.png" class="d-block w-100 foto-carousel"
+                  alt="cortadora-fiambre lateral" />
               </div>
               <div class="carousel-item">
-                <img src="./images/oferta-pa3.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pa3.png" class="d-block w-100 foto-carousel" alt="cortadora-fiambre frente" />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselOferta1" data-bs-slide="prev">
@@ -113,13 +114,14 @@
           <div id="carouselOferta2" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./images/oferta-pb1.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pb1.png" class="d-block w-100 foto-carousel" alt="Picadora Carne" />
               </div>
               <div class="carousel-item">
-                <img src="./images/oferta-pb2.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pb2.png" class="d-block w-100 foto-carousel" alt="Picadora Carne - cabezal" />
               </div>
               <div class="carousel-item">
-                <img src="./images/oferta-pb3.png" class="d-block w-100 foto-carousel" alt="..." />
+                <img src="./images/oferta-pb3.png" class="d-block w-100 foto-carousel"
+                  alt="Picadora Carne - accesorios" />
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselOferta2" data-bs-slide="prev">
@@ -154,8 +156,9 @@
       </div>
     </section>
   </main>
+  
   <footer>
-    <p class="text-white text-center fs-5">Whatsapp (0999) 999-9999</p>
+    <p class="text-center fs-4">Whatsapp (0999) 999-9999</p>
     <div class="d-flex justify-content-center column-gap-3">
       <a href="https://www.instagram.com/audiarg/?hl=es" target="_blank">
         <img src="./images/igLogo.avif" alt="Instagram logo" />

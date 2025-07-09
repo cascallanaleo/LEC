@@ -1,28 +1,27 @@
 /* reset de css */
 * {
     font-family: "Roboto", sans-serif;
-    padding:0px;
+    padding: 0px;
     margin: 0px;
 }
+
+
+
 
 /* Header stilos */
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
+    transition: height 0.3s ease;
     background-image: url(../images/header.jpg);
-    background-size: 100% 100%;
-    position: relative;
-    height: 7.3rem;
+    background-size: cover;
+
 }
 
 .oscurecer-fondo {
-    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.412);
@@ -30,25 +29,44 @@ header {
 
 .logo-tipo {
     padding: 0.6rem;
-    width: 25rem;
+    width: 20rem;
 }
 
-#menu {
-    display: flex;
+.header-container {
     position: relative;
-    align-items: end;
-    justify-content: right;
-    column-gap: 1.5rem;
-    font-size: 1.5rem;
-    list-style: none;
-    white-space: nowrap;
-    width: 100%;
-    height: 7rem;
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: end !important;
 }
 
-#menu a {
-    color: #FFF;
+.header-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+
+#header-menu {
+    width: 100%;
     text-decoration: none;
+    list-style: none;
+    column-gap: 1.5rem;
+    align-items: end;
+    justify-content: end;
+    bottom: 0;
+}
+
+#header-menu a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+#header-menu a:hover {
+    color: #FFD6BA;
+    font-size: 1.6rem;
 }
 
 .opcion-seleccionada {
@@ -58,17 +76,21 @@ header {
     text-decoration: none;
 }
 
-/* body estilos */
 
+
+
+
+
+/* body estilos */
 /* main estilos */
 main {
     padding-top: 8rem;
     padding-bottom: 5rem;
     width: 100%;
-    background-color: #ccc;
+    background-color: #EEEFE0;
 }
 
-    /*cards  */
+/*cards  */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -76,21 +98,24 @@ main {
     row-gap: 3rem;
     justify-content: center;
 }
+
 .card-lec {
     width: 25rem;
     border: 4px solid rgba(0, 0, 0, 0.238);
 }
+
 .card-imagen {
     width: 100%;
     height: 25rem;
 }
+
 .card-name {
     width: 100%;
     text-align: center;
     background-color: #f2cbcb;
     padding: 0.5rem;
-    ;
 }
+
 .card-btn {
     background-color: #000;
     color: #fff;
@@ -98,7 +123,7 @@ main {
     width: 100%;
 }
 
-    /*Grid Carousel*/
+/*Grid Carousel*/
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -106,29 +131,34 @@ main {
     width: 90%;
     margin-left: 5%;
 }
+
 .foto-carousel {
     height: 25rem;
     object-fit: contain;
 }
+
 .div1 {
     grid-area: 1 / 1 / 2/ 2;
     border: 2px solid black;
     background-color: #fff;
 }
+
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
     border: 2px solid black;
     background-color: #fff;
 }
 
-    /*grid quienes somos  */
+/*grid quienes somos  */
 .quienes-somos {
     width: 70%;
     margin-left: 15%;
 }
+
 .foto-quienes-somos {
     height: 25rem;
 }
+
 .parent-quienes-somos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -137,12 +167,15 @@ main {
     grid-row-gap: 0px;
     padding: 5%;
 }
+
 .div1-quienes-somos {
     grid-area: 1 / 1 / 2 / 2;
 }
+
 .div2-quienes-somos {
     grid-area: 1 / 2 / 2 / 3;
 }
+
 .div3-quienes-somos {
     grid-area: 2 / 1 / 2 / 3;
 }
@@ -155,10 +188,12 @@ main {
 }
 
 
+
+
+
 /* fotter estilos */
 footer {
-    background-color: #000;
-    margin-top: 2rem;
+    background-color: #B1AB86;
     height: 10rem;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,38 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de editores
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Carpetas comunes a excluir
+node_modules/
+dist/
+build/
+tmp/
+.cache/
+
+# Dependencias o entornos virtuales
+.env
+.env.local
+.vscode/
+.idea/
+
+# Archivos generados
+*.bak
+*.old
+*.orig
+*.min.*
+
+# Salida de herramientas como Sass o TypeScript (si se usan)
+*.map
+
+# Archivos de sistema operativos
+*.~*
+
+# Otros posibles (si usás herramientas específicas, como parcel, webpack, etc.)
+.parcel-cache/
+coverage/
