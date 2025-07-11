@@ -1,0 +1,9 @@
+@mixin altoyancho($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+@mixin gridarea_blancoyborde ($inifil, $inicol, $finfil, $fincol) {
+    grid-area: #{$inifil} / #{$inicol} / #{$finfil} / #{$fincol};
+    border: 2px solid $negro;
+    background-color: $blanco;
+}

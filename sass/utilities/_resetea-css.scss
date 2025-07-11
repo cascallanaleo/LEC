@@ -1,0 +1,8 @@
+@import "./extends";
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin-top: 0;
+    padding: 0;
+    @extend .sin-margen-padding;
+}

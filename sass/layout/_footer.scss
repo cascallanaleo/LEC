@@ -1,0 +1,13 @@
+footer {
+    background-color: $beigeverdoso;
+    @include altoyancho(10rem, unset);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        @include altoyancho(3rem, 3rem);
+        object-fit: cover;
+    }
+}
+

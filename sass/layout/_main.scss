@@ -1,0 +1,101 @@
+main {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    @include altoyancho(unset, 100%);
+    background-color: #EEEFE0;
+}
+
+/*cards  */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 3rem;
+    justify-content: center;
+}
+
+.card-lec {
+    @include altoyancho(unset, 25rem);
+    border: 4px solid rgba(0, 0, 0, 0.238);
+}
+
+.card-imagen {
+    @include altoyancho(25rem, 100%);
+}
+
+.card-name {
+    @include altoyancho(unset, 100%);
+    text-align: center;
+    background-color: #f2cbcb;
+    padding: 0.5rem;
+}
+
+.card-btn {
+    background-color: $negro;
+    color: $blanco;
+    padding: 0.5rem;
+    @include altoyancho(unset, 100%);
+}
+
+/*Grid Carousel*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    @include altoyancho(unset, 90%);
+    margin-left: 5%;
+}
+
+.foto-carousel {
+    @include altoyancho(25rem, unset);
+    object-fit: contain;
+}
+
+.div1 {
+    @include gridarea_blancoyborde (1,1,2,2);
+}
+
+.div2 {
+    @include gridarea_blancoyborde (1,2,2,3);
+}
+
+/*grid quienes somos  */
+.quienes-somos {
+    @include altoyancho(unset, 70%);
+    margin-left: 15%;
+}
+
+.foto-quienes-somos {
+    @include altoyancho(25rem, unset);
+}
+
+.parent-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 5%;
+}
+
+.div1-quienes-somos {
+    @include gridarea_blancoyborde (1,1,2,2);
+
+}
+
+.div2-quienes-somos {
+    @include gridarea_blancoyborde (1,2,2,3);
+}
+
+.div3-quienes-somos {
+    @include gridarea_blancoyborde (2,1,2,3);
+}
+
+#mensaje {
+    border: 2px solid black;
+    padding: 1rem;
+    @include altoyancho(unset, 80%);
+    margin-left: 10%;
+}
+
+
