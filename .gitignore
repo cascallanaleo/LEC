@@ -1,12 +1,15 @@
 # Archivos del sistema
 .DS_Store
 Thumbs.db
+*.~*
 
-# Archivos temporales de editores
+# Archivos temporales de editores y backups
 *.log
 *.tmp
 *.swp
 *.swo
+*.bak
+*.old
 
 # Carpetas comunes a excluir
 node_modules/
@@ -21,18 +24,7 @@ tmp/
 .vscode/
 .idea/
 
-# Archivos generados
-*.bak
-*.old
-*.orig
-*.min.*
-
-# Salida de herramientas como Sass o TypeScript (si se usan)
+# Salida de herramienta Sass 
 *.map
 
-# Archivos de sistema operativos
-*.~*
 
-# Otros posibles (si usás herramientas específicas, como parcel, webpack, etc.)
-.parcel-cache/
-coverage/

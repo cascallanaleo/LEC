@@ -1,207 +1,218 @@
-/* reset de css */
-* {
-    font-family: "Roboto", sans-serif;
-    padding: 0px;
-    margin: 0px;
+.sin-margen-padding, *, .header-container, .header-nav {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-
-
-
-/* Header stilos */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    transition: height 0.3s ease;
-    background-image: url(../images/header.jpg);
-    background-size: cover;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: unset;
+  width: 100%;
+  z-index: 999;
+  transition: height 0.3s ease;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
 }
 
 .oscurecer-fondo {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.412);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.412);
 }
 
 .logo-tipo {
-    padding: 0.6rem;
-    width: 20rem;
+  padding: 0.6rem;
+  max-width: 20rem;
+  height: auto;
+  width: 100%;
 }
 
 .header-container {
-    position: relative;
-    height: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
-    align-items: end !important;
-}
-
-.header-nav {
-    margin: 0 !important;
-    padding: 0 !important;
-    color: white;
+  position: relative;
+  height: 100%;
+  width: unset;
+  align-items: end !important;
 }
 
 #header-menu {
-    width: 100%;
-    text-decoration: none;
-    list-style: none;
-    column-gap: 1.5rem;
-    align-items: end;
-    justify-content: end;
-    bottom: 0;
+  height: unset;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  column-gap: 1.5rem;
+  align-items: end;
+  justify-content: end;
+  bottom: 0;
 }
-
 #header-menu a {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-right: 1rem;
-    transition: all 0.3s ease;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 1rem;
+  transition: all 0.3s ease;
+  text-align: center;
 }
-
 #header-menu a:hover {
-    color: #FFD6BA;
-    font-size: 1.6rem;
+  color: #FFD6BA;
+  font-size: 1.6rem;
 }
 
 .opcion-seleccionada {
-    color: #ccc;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-
-
-
-
-
-/* body estilos */
-/* main estilos */
 main {
-    padding-top: 8rem;
-    padding-bottom: 5rem;
-    width: 100%;
-    background-color: #EEEFE0;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  height: unset;
+  width: 100%;
+  background-color: #EEEFE0;
 }
 
 /*cards  */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    row-gap: 3rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 3rem;
+  justify-content: center;
 }
 
 .card-lec {
-    width: 25rem;
-    border: 4px solid rgba(0, 0, 0, 0.238);
+  height: unset;
+  width: 25rem;
+  border: 4px solid rgba(0, 0, 0, 0.238);
 }
 
 .card-imagen {
-    width: 100%;
-    height: 25rem;
+  height: 25rem;
+  width: 100%;
 }
 
 .card-name {
-    width: 100%;
-    text-align: center;
-    background-color: #f2cbcb;
-    padding: 0.5rem;
+  height: unset;
+  width: 100%;
+  text-align: center;
+  background-color: #f2cbcb;
+  padding: 0.5rem;
 }
 
 .card-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 0.5rem;
-    width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  height: unset;
+  width: 100%;
 }
 
 /*Grid Carousel*/
 .parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    width: 90%;
-    margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: unset;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .foto-carousel {
-    height: 25rem;
-    object-fit: contain;
+  height: 25rem;
+  width: unset;
+  object-fit: contain;
 }
 
 .div1 {
-    grid-area: 1 / 1 / 2/ 2;
-    border: 2px solid black;
-    background-color: #fff;
+  grid-area: 1/1/2/2;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 .div2 {
-    grid-area: 1 / 2 / 2 / 3;
-    border: 2px solid black;
-    background-color: #fff;
+  grid-area: 1/2/2/3;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 /*grid quienes somos  */
 .quienes-somos {
-    width: 70%;
-    margin-left: 15%;
+  height: unset;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .foto-quienes-somos {
-    height: 25rem;
+  height: 25rem;
+  width: unset;
 }
 
 .parent-quienes-somos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 5%;
 }
 
 .div1-quienes-somos {
-    grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1/1/2/2;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 .div2-quienes-somos {
-    grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1/2/2/3;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 .div3-quienes-somos {
-    grid-area: 2 / 1 / 2 / 3;
+  grid-area: 2/1/2/3;
+  border: 2px solid #000;
+  background-color: #fff;
 }
 
 #mensaje {
-    border: 2px solid black;
-    padding: 1rem;
-    width: 80%;
-    margin-left: 10%;
+  border: 2px solid black;
+  padding: 1rem;
+  height: unset;
+  width: 80%;
+  margin-left: 10%;
 }
 
-
-
-
-
-/* fotter estilos */
 footer {
-    background-color: #B1AB86;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: #B1AB86;
+  height: 10rem;
+  width: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
 }
 
-footer img {
-    width: 3rem;
-    height: 3rem;
-    object-fit: cover;
+@media only screen and (max-width: 600px) {
+  #header-menu a {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+  .header-section {
+    flex-direction: column;
+  }
+  main {
+    padding-top: 12rem;
+  }
 }
+/* reset de css */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

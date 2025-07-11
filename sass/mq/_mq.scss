@@ -1,0 +1,14 @@
+@media only screen and (max-width:600px) {
+    #header-menu a {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+
+    .header-section {
+        flex-direction: column;
+    }
+
+    main {
+        padding-top: 12rem;
+   }
+}

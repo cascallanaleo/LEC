@@ -1,0 +1,70 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include altoyancho(unset, 100%);
+    z-index: 999;
+    transition: height 0.3s ease;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+
+}
+
+.oscurecer-fondo {
+    @include altoyancho(100%, 100%);
+    background-color: rgba(0, 0, 0, 0.412);
+}
+
+.logo-tipo {
+    padding: 0.6rem;
+    max-width: 20rem;
+    @include altoyancho(auto, 100%);
+}
+
+
+.header-nav {
+    @extend .sin-margen-padding
+}
+
+
+.header-container {
+    @extend .sin-margen-padding;
+    position: relative;
+    @include altoyancho(100%, unset);
+    align-items: end !important;
+}
+
+#header-menu {
+    @include altoyancho(unset, 100%);
+    text-decoration: none;
+    list-style: none;
+    column-gap: 1.5rem;
+    align-items: end;
+    justify-content: end;
+    bottom: 0;
+
+    a {
+        color: $blanco;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-right: 1rem;
+        transition: all 0.3s ease;
+        text-align: center;
+
+        &:hover {
+            color: #FFD6BA;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+.opcion-seleccionada {
+    color: #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
