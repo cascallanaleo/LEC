@@ -22,12 +22,12 @@ header {
 
 
 .header-nav {
-    @extend .sin-margen-padding;
+    @extend %sin-margen-padding;
 }
 
 
 .header-container {
-    @extend .sin-margen-padding;
+    @extend %sin-margen-padding;
     position: relative;
     @include altoyancho(100%, unset);
     align-items: end !important;

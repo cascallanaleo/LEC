@@ -1,4 +1,11 @@
-g.sin-margen-padding {
-    margin: 0 !important;
-    padding: 0 !important
+%bloque-con-borde {
+  border: 4px solid rgba(0, 0, 0, 0.682);
+  border-radius: 1rem;
+  background-color: white;
 }
+
+%sin-margen-padding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
